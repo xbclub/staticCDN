@@ -1,0 +1,2 @@
+# staticCDN
+jsDelivr
