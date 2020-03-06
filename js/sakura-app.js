@@ -214,35 +214,35 @@ mashiro_global.post_list_show_animation = new function () {
     })
   }
 }()
-// mashiro_global.font_control = new function () {
-  // this.change_font = function () {
-  //   if ($('body').hasClass('serif')) {
-  //     $('body').removeClass('serif')
-  //     $('.control-btn-serif').removeClass('selected')
-  //     $('.control-btn-sans-serif').addClass('selected')
-  //     setCookie('font_family', 'sans-serif', 30)
-  //   } else {
-  //     $('body').addClass('serif')
-  //     $('.control-btn-serif').addClass('selected')
-  //     $('.control-btn-sans-serif').removeClass('selected')
-  //     setCookie('font_family', 'serif', 30)
-  //     if (document.body.clientWidth <= 860) {
-  //       addComment.createButterbar('将从网络加载字体，流量请注意')
-  //     }
-  //   }
-  // }
-//   this.ini = function () {
-//     if (document.body.clientWidth > 860) {
-//       if (!getCookie('font_family') || getCookie('font_family') == 'serif') { $('body').addClass('serif') }
-//     }
-//     if (getCookie('font_family') == 'sans-serif') {
-//       $('body').removeClass('sans-serif')
-//       $('.control-btn-serif').removeClass('selected')
-//       $('.control-btn-sans-serif').addClass('selected')
-//     }
-//   }
-// }()
-//mashiro_global.font_control.ini()
+mashiro_global.font_control = new function () {
+  this.change_font = function () {
+    if ($('body').hasClass('serif')) {
+      $('body').removeClass('serif')
+      $('.control-btn-serif').removeClass('selected')
+      $('.control-btn-sans-serif').addClass('selected')
+      setCookie('font_family', 'sans-serif', 30)
+    } else {
+      $('body').addClass('serif')
+      $('.control-btn-serif').addClass('selected')
+      $('.control-btn-sans-serif').removeClass('selected')
+      setCookie('font_family', 'serif', 30)
+      if (document.body.clientWidth <= 860) {
+        addComment.createButterbar('将从网络加载字体，流量请注意')
+      }
+    }
+  }
+  this.ini = function () {
+    if (document.body.clientWidth > 860) {
+      if (!getCookie('font_family') || getCookie('font_family') == 'serif') { $('body').addClass('serif') }
+    }
+    if (getCookie('font_family') == 'sans-serif') {
+      $('body').removeClass('sans-serif')
+      $('.control-btn-serif').removeClass('selected')
+      $('.control-btn-sans-serif').addClass('selected')
+    }
+  }
+}()
+mashiro_global.font_control.ini()
 
 function code_highlight_style () {
   function gen_top_bar (i) {
