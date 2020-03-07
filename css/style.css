@@ -1552,7 +1552,7 @@ a:hover,a:active {
     padding:10px;
     top:46px;
     right:-13px;
-    width:120px;
+    width:80px;
     text-align:center;
     z-index:9999;
     border-radius:5px;
@@ -3964,6 +3964,7 @@ li.feature-2 {
     padding: 0;
     width: 100%;
     z-index: 0;
+}
 }.blank {
     padding-top:80px;
     background-color:rgba(255,255,255,1)
