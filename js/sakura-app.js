@@ -179,8 +179,7 @@ function imgError (ele, type) {
       ele.src = 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/default_gavatar.jpg'
       break
     case 3:
-
-      ele.src = 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/image-404.png'
+      ele.src = bg[bgindex]
       break
     default:
       ele.src = 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/image-404.png'
