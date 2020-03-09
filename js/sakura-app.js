@@ -179,11 +179,13 @@ function imgError (ele, type) {
       ele.src = 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/default_gavatar.jpg'
       break
     case 3:
+      var bgindex = Math.floor(Math.random()*bg.length)
       ele.src = bg[bgindex]
       break
     default:
       ele.src = 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/image-404.png'
   }
+    console.log('%c Github %c', 'background:#24272A; color:#ffffff', '', ele.src)
 }
 mashiro_global.post_list_show_animation = new function () {
   this.ini = function (ajax) {
